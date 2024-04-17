@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <style>
         .container .row {
-    margin-top: 20px;
+        margin-top: 20px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -15,15 +15,26 @@
             display: grid;
             grid-template-columns: repeat(2, 50%);
         }
+
+        .card {
+            min-width: 335px;
+            margin-bottom: 20px;
+        }
     }
 
     @media screen and (max-width: 667px) {
         .container .row {
             display: block;
         }
+
+        .card {
+            min-width: 350px;
+            margin-bottom: 20px;
+        }
     }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
