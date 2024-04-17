@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <style>
         .container .row {
-            margin-top: 20px;
+    margin-top: 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .container .row {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
         }
+    }
+
+    @media screen and (max-width: 667px) {
+        .container .row {
+            display: block;
+        }
+    }
     </style>
 </head>
 <body>
@@ -61,7 +74,7 @@
                     </div>
                     <img src="./img/dunePost2.jpg"/>
                     <div class="card-body">
-                        <h4 class="card-title">The horizon future</h4>
+                        <h4 class="card-title">The horizon</h4>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consectetur deserunt necessitatibus in! 
                         </p>
